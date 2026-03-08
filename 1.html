@@ -13,3 +13,228 @@
     <a href="https://example.com">Ссылка на пример</a>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя простая страница</title>
+    <style>
+        /* Основные стили для страницы */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        /* Стили для контейнера с контентом */
+        body > * {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        body > *:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Стили для заголовка */
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        /* Стили для параграфа */
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        /* Стили для ссылок */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 12px 25px;
+            border-radius: 50px;
+            margin: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        a:hover {
+            background: white;
+            color: #764ba2;
+            border-color: #764ba2;
+            transform: scale(1.05);
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя простая страница</title>
+    <style>
+        /* Основные стили для страницы */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        /* Стили для контейнера с контентом */
+        body > * {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        body > *:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Стили для заголовка */
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        /* Стили для параграфа */
+        p {
+            color: #666;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        /* Стили для ссылок */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 12px 25px;
+            border-radius: 50px;
+            margin: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        a:hover {
+            background: white;
+            color: #764ba2;
+            border-color: #764ba2;
+            transform: scale(1.05);
+        }
+        
+        a:first-of-type {
+            margin-right: 15px;
+        }
+        
+        a:active {
+            transform: scale(0.95);
+        }
+        
+        /* Стили для выделения текста */
+        p::selection {
+            background: #764ba2;
+            color: white;
+        }
+        
+        /* Медиа-запрос для мобильных устройств */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            p {
+                font-size: 1em;
+            }
+            
+            a {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
+            
+            a:first-of-type {
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Привет, мир!</h1>
+    <p>Это моя первая 11111 HTML страница.</p>
+    <a href="https://example.com">Ссылка на пример</a>
+    <a href="https://example.com">Ссылка на пример</a>
+</body>
+</html>
